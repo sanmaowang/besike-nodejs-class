@@ -10,7 +10,9 @@ function _Class(obj, parent){
 		ctor.prototype = parent.prototype;
 		_constructor.prototype = new ctor();
 		_constructor.prototype.constructor = _constructor;
-		_constructor.prototype.__super__ = parent.prototype;
+		_constructor.__super__ = parent;
+	}else{
+		_constructor.__super__ = Object;
 	}
 
 	for(var key in obj){
