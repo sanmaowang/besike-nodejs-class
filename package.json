@@ -1,0 +1,19 @@
+{
+  "name": "besike-nodejs-class",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanmaowang/besike-nodejs-class"
+  },
+  "author": "sanmao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanmaowang/besike-nodejs-class/issues"
+  },
+  "homepage": "https://github.com/sanmaowang/besike-nodejs-class"
+}
