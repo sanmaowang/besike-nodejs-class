@@ -20,8 +20,11 @@ function _Class(obj, parent){
 			_constructor.prototype[key] = obj[key];
 		}
 	}
+	var current_class = _constructor;
 	_constructor.prototype.super = function(method){
-		return _constructor.__super__.prototype[method].apply(this,[].slice.call(arguments,1));
+		current_class = current_class.__super__;
+		var result = current_class.prototype[method].apply(this,[].slice.call(arguments,1));
+		return result;
 	}
 
 	return _constructor;
